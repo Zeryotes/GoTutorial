@@ -23,10 +23,13 @@ func main() {
 		fmt.Println("(0) Sair")
 
 		fmt.Print("\nDigite sua opção: ")
+		fmt.Scanln(&opcao)
 
 		switch opcao {
 		case 1:
-
+			var forma = "retângulo"
+			fmt.Printf("Área do %v: \n", forma)
+			fmt.Printf("Perimetro do %v: \n", forma)
 		case 2:
 		case 3:
 		case 4:
