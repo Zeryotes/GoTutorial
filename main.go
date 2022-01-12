@@ -34,6 +34,8 @@ func main() {
 
 		switch opcao {
 		case 1:
+			// Referência de calculos: https://www.preparaenem.com/matematica/triangulo-equilatero.htm
+
 			// Variaveis
 			var forma = "Triângulo equilátero"
 			var lado float64
@@ -49,7 +51,6 @@ func main() {
 			perimetro = lado * 3
 
 			// Print
-			fmt.Println("")
 			fmt.Printf("Área do %v: %v\n", forma, area)
 			fmt.Printf("Perimetro do %v: %v\n", forma, perimetro)
 		case 2:
@@ -120,7 +121,7 @@ func main() {
 			fmt.Scanln(&alturaPiramide)
 
 			// Calculos
-			// fmt.Printf("QUERO SABER ISSO AQUI: %v\n", math.Sqrt((math.Pow(arestaBase/2, 2) + math.Pow(alturaPiramide, 2))))
+			//            |                        calculo da apótema                          |   face lateral   | 4 faces
 			areaLateral = ((math.Sqrt((math.Pow(arestaBase/2, 2) + math.Pow(alturaPiramide, 2))) * arestaBase) / 2) * 4
 			areaBase = math.Pow(arestaBase, 2)
 			area = areaBase + areaLateral
@@ -151,6 +152,7 @@ func main() {
 			var aresta1 float64
 			var aresta2 float64
 			var aresta3 float64
+
 			// Entrada de valores
 			fmt.Printf("Digite o tamanho da primeira aresta do %v: ", forma)
 			fmt.Scanln(&aresta1)
